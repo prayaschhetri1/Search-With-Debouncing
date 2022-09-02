@@ -5,7 +5,7 @@ const getData = async () => {
     let input = document.getElementById("input-search").value;
 
     let res = await fetch(
-      `http://www.omdbapi.com/?&apikey=7b9e6a84&s=${input}`
+      `https://www.omdbapi.com/?&apikey=7b9e6a84&s=${input}`
     );
     let data = await res.json();
     return data?.Search;
